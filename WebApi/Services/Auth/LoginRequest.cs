@@ -4,6 +4,7 @@ namespace Senegocia.WebApi.Services.Auth
 {
     public class LoginRequest
     {
+        [Required]
         [EmailAddress]
         public string UserEmail { get; set; }
 

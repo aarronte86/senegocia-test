@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
 using Senegocia.WebApi.Services.Auth;
+using Senegocia.WebApi.Services.Indicator;
+using Senegocia.WebApi.Services.Integration.Indicators;
 
 namespace Senegocia.WebApi
 {
@@ -12,6 +14,9 @@ namespace Senegocia.WebApi
 
             services.AddScoped<IJwtProvider, JwtProvider>();
             services.AddScoped<IAuthenticationHandler, AuthenticationHandler>();
+
+            services.AddScoped<IIndicatorsService, IndicatorsService>();
+            services.AddScoped<IIndicatorsOutputHandler, IndicatorsOutputHandler>();
         }
     }
 }
