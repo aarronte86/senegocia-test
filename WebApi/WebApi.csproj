@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>Senegocia.WebApi</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
